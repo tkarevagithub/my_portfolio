@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>my_portfolio
-  </title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- navbar -->
+    <!--Navbar-->
     <nav class="navbar">
-        <ul class="link-group">
-            <li class="link active"><a href="#">home</a></li>
-            <li class="link"><a href="#">projects</a></li>
-            <li class="link"><a href="#">about</a></li>
-            <li class="link"><a href="#">contact</a></li>
+        <ul class="link-group navbar__menu">
+            <li class="link-group__link active"><a href="#">home</a></li>
+            <li class="link-group__link"><a href="#">projects</a></li>
+            <li class="link-group__link"><a href="#">about</a></li>
+            <li class="link-group__link"><a href="#">contact</a></li>
         </ul>
     </nav>
 
-    <!-- home section -->
-    <section class="home-section active">
-        <h1 class="hero-heading">hello, i am <br> Tanya</h1>
-        <img src="img/home.png" class="home-img" alt="my_photo">
+    <!-- Home section -->
+    <section class="home-section section active">
+        <h1 class="home-section__heading">hello, i am <br>Tatyana</h1>
+        <img src="img/photo.jpg" class="home-section__img" alt="my_photo">
     </section>
-    
-    <!-- project section -->
-    <section class="project-section active">
-        <h1 class="project-heading">some of my projects</h1>
-        <div class="project-container">
+
+    <!-- Project section -->
+    <section class="project-section section">
+        <h1 class="project-section__heading">some of my projects</h1>
+        <div class="projects project-section__container">
             <div class="project-card">
-                <img src="img/project-1.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">project 01</h1>
-                    <p class="project-info">
+                <img src="img/project-1.png" class="project-card__img" alt="first project">
+                <div class="project-card__content">
+                    <h1 class="project-card__title">project 01</h1>
+                    <p class="project-card__info">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
                     </p>
-                        <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live">see live</button>
+                        <div class="project-btngrp">
+                        <button class="project-btn project-btn_github">github repo</button>
+                        <button class="project-btn project-btn_live">see live</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/project-2.png" class="project-card__img" alt="second project">
+                <div class="project-card__content">
+                    <h1 class="project-card__title">project 02</h1>
+                    <p class="project-card__info">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                    </p>
+                        <div class="project-btngrp">
+                        <button class="project-btn project-btn_github">github repo</button>
+                        <button class="project-btn project-btn_live">see live</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/project-3.png" class="project-card__img" alt="third project">
+                <div class="project-card__content">
+                    <h1 class="project-card__title">project 03</h1>
+                    <p class="project-card__info">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                    </p>
+                        <div class="project-btngrp">
+                        <button class="project-btn project-btn_github">github repo</button>
+                        <button class="project-btn project-btn_live">see live</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/project-4.png" class="project-card__img" alt="fourth project">
+                <div class="project-card__content">
+                    <h1 class="project-card__title">project 04</h1>
+                    <p class="project-card__info">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                    </p>
+                        <div class="project-btngrp">
+                        <button class="project-btn project-btn_github">github repo</button>
+                        <button class="project-btn project-btn_live">see live</button>
                     </div>
                 </div>
             </div>
@@ -47,31 +85,42 @@
     </section>
 
     <!-- about section -->
-    <section class="about-section">
-    <div class="about">
-        <div class="about-img-container">
-            <img src="img/home.png" class="about-img" alt="me">
-            <button class="download-cv-btn">downlaod cv</button>
+    <section class="about-section section">
+        <div class="about about-section__container">
+            <div class="about-card">
+                <img src="img/photo.jpg" class="about-card__img" alt="my_photo">
+                <button class="about-card__btn">Download CV</button>
+            </div>
+            <p class="about-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+            </p>
         </div>
-        <p class="about-info">Lorem ipsum.....</p>
-    </div>
+        <!-- skills -->
+        <div class="skill-section">
+            <h1 class="skill-section__heading">skills</h1>
+            <div class="skill-section__container">
+                <div class="skill-card">
+                    <img src="img/html.png" class="skill-card__img" alt="html">
+                    <div class="skill-card__level">98%</div>
+                    <h1 class="skill-card__name">HTML</h1>
+                    <p class="skill-card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/css.png" class="skill-card__img" alt="html">
+                    <div class="skill-card__level">98%</div>
+                    <h1 class="skill-card__name">CSS</h1>
+                    <p class="skill-card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+                </div>
+                <div class="skill-card">
+                    <img src="img/js.png" class="skill-card__img" alt="html">
+                    <div class="skill-card__level">98%</div>
+                    <h1 class="skill-card__name">JS</h1>
+                    <p class="skill-card__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
 
-    <!-- skills -->
-    <div class="skill-section">
-    <h1 class="heading">skills</h1>
-    <div class="skills-container">
-        <div class="skill-card">
-            <img src="img/html.png" class="skill-img" alt="">
-            <div class="skill-level">98%</div>
-            <h1 class="skill-name">HTML</h1>
-            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
-        </div>
-        // +4 more cards
-    </div>
-    </div>
-    
     <!-- contact section -->
     <section class="contact-section section">
         <form class="contact-form">
@@ -86,8 +135,7 @@
         </div>
     </section>
 
-    <script src="app.js"></script>
     
-   
+    <script src="app.js"></script>
 </body>
 </html>
