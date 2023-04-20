@@ -17,3 +17,11 @@ links.forEach((link, i) => {
         }
     })
 })
+
+// let form = document.querySelector('.contact-form');
+// form.onsubmit = function() {
+//   alert('Форма отправлена!');
+// };
+
+// let input = document.querySelector('input');
+// console.log(input.value);
